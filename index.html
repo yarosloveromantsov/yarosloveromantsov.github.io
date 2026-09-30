@@ -7,7 +7,7 @@
 <title>Ярослав Романцов — Портфолио</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
 
 :root {
     --black: #0b0e12;
@@ -43,6 +43,7 @@ section {
 a {
     color: inherit;
 }
+
 
 /* =========================================
    ОБЩИЕ ЗАГОЛОВКИ
@@ -81,21 +82,28 @@ a {
 .hero-title {
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 70px;
+
+    padding-top: 100px;
 }
 
-/* Привет, я */
+
+/* «Привет, я» */
 
 .hero-title .small {
-    font-size: clamp(34px, 4.2vw, 62px);
+    font-size: clamp(27px, 2.4vw, 38px);
     line-height: 1;
     font-weight: 500;
-    letter-spacing: -.04em;
+    font-style: italic;
+    letter-spacing: -.035em;
 
     color: #777b82;
 
-    margin-bottom: 48px;
+    margin-bottom: 42px;
+
+    position: relative;
+    top: 18px;
 }
+
 
 /* Имя */
 
@@ -155,8 +163,10 @@ a {
     letter-spacing: -.055em;
 }
 
+
 /*
-   Три колонки подняты ближе к главному тексту.
+   Колонки подняты выше.
+   Шрифт сделан заметнее.
 */
 
 .about-grid {
@@ -210,6 +220,11 @@ a {
    02 / БОЛЬШИЕ ТЕКСТЫ
    ========================================= */
 
+/*
+   ВАЖНО:
+   Композицию третьего экрана НЕ МЕНЯЕМ.
+*/
+
 .big-texts {
     background: var(--white);
 }
@@ -231,15 +246,18 @@ a {
     letter-spacing: -.06em;
 }
 
-/* Правый текст увеличен */
+
+/*
+   Меняем только размер текста справа.
+*/
 
 .big-description {
-    max-width: 680px;
+    max-width: 650px;
 
     padding-top: 4px;
 
-    font-size: 21px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.48;
     font-weight: 500;
 
     color: #444;
@@ -435,8 +453,9 @@ a {
     }
 
     .hero-title .small {
-        font-size: 12vw;
-        margin-bottom: 25px;
+        font-size: 8vw;
+        margin-bottom: 30px;
+        top: 10px;
     }
 
     .hero-title .name {
@@ -701,8 +720,6 @@ a {
     <div class="main-works">
 
 
-        <!-- ТЕКСТ 01 -->
-
         <article>
 
             <div class="work-number">
@@ -735,8 +752,6 @@ a {
 
         </article>
 
-
-        <!-- ТЕКСТ 02 -->
 
         <article>
 
@@ -772,8 +787,6 @@ a {
 
     </div>
 
-
-    <!-- ЕЩЁ ТЕКСТЫ -->
 
     <div class="more">
 
