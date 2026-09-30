@@ -4,10 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ярослав Романов — Portfolio</title>
+<title>Ярослав Романцов — Портфолио</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --black: #0b0e12;
+    --white: #f4f4f2;
+    --text: #111111;
+    --muted: #777777;
+    --line: #d2d2cf;
+}
 
 * {
     box-sizing: border-box;
@@ -20,53 +28,79 @@ html {
 }
 
 body {
-    font-family: 'Manrope', sans-serif;
-    background: #000;
-    color: #111;
+    font-family: 'Manrope', Arial, sans-serif;
+    background: var(--black);
+    color: var(--text);
 }
 
 section {
-    min-height: 100vh;
     width: 100%;
+    min-height: 100vh;
     position: relative;
-    padding: 38px 58px 58px;
+    padding: 38px 4.2vw 50px;
 }
 
-/* ---------- FIRST SCREEN ---------- */
+/* =========================
+   ОБЩИЕ ЭЛЕМЕНТЫ
+   ========================= */
+
+.section-head,
+.topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+.section-head {
+    color: var(--muted);
+}
+
+a {
+    color: inherit;
+}
+
+/* =========================
+   ПЕРВЫЙ ЭКРАН
+   ========================= */
 
 .hero {
-    background: #0b0e12;
-    color: #f2f3f5;
+    background: var(--black);
+    color: var(--white);
+
     display: flex;
     flex-direction: column;
 }
 
 .topline {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: .08em;
     color: #858b94;
 }
 
 .hero-title {
     margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 80px;
 }
 
 .hero-title .small {
-    font-size: clamp(42px, 7vw, 108px);
+    font-size: clamp(46px, 6.5vw, 96px);
+    line-height: .92;
     font-weight: 600;
-    line-height: .95;
     letter-spacing: -.055em;
 }
 
 .hero-title .name {
-    font-size: clamp(70px, 10vw, 150px);
+    margin-top: 4px;
+
+    font-size: clamp(82px, 11vw, 155px);
+    line-height: .82;
     font-weight: 800;
-    line-height: .83;
-    letter-spacing: -.065em;
+    letter-spacing: -.07em;
 }
 
 .hero-title .name span {
@@ -74,227 +108,346 @@ section {
 }
 
 .hero-bottom {
-    margin-top: 55px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    font-size: 13px;
+
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: .04em;
     color: #858b94;
 }
 
-/* ---------- ABOUT ---------- */
+.hero-bottom a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================
+   О СЕБЕ
+   ========================= */
 
 .about {
-    background: #f4f4f2;
+    background: var(--white);
+
     display: flex;
     flex-direction: column;
 }
 
-.section-head {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .08em;
-    color: #777;
-}
-
 .about-intro {
-    margin-top: 75px;
-    max-width: 920px;
-    font-size: clamp(38px, 5vw, 70px);
-    line-height: .98;
-    letter-spacing: -.055em;
+    margin-top: 72px;
+    max-width: 930px;
+
+    font-size: clamp(42px, 4.6vw, 68px);
+    line-height: 1.01;
     font-weight: 700;
+    letter-spacing: -.055em;
 }
 
 .about-grid {
     margin-top: auto;
+    padding-top: 90px;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 55px;
+    gap: 7vw;
 }
 
 .about-item h3 {
-    font-size: 13px;
-    letter-spacing: .08em;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: .06em;
 }
 
 .about-item p {
-    max-width: 320px;
+    max-width: 340px;
+
     font-size: 15px;
-    line-height: 1.5;
-    color: #444;
+    line-height: 1.52;
+    font-weight: 500;
+    color: #484848;
 }
 
 .about-footer {
-    margin-top: 50px;
+    margin-top: 70px;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
     font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .08em;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: .06em;
 }
 
-/* ---------- BIG TEXTS ---------- */
+.about-footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================
+   БОЛЬШИЕ ТЕКСТЫ
+   ========================= */
 
 .big-texts {
-    background: #f4f4f2;
-    padding-top: 38px;
+    background: var(--white);
 }
 
 .big-intro {
+    margin-top: 62px;
+
     display: grid;
-    grid-template-columns: 1.15fr .85fr;
-    gap: 70px;
-    margin-top: 65px;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 8vw;
+
     align-items: start;
 }
 
 .big-title {
-    font-size: clamp(48px, 6vw, 82px);
-    line-height: .92;
-    letter-spacing: -.06em;
+    font-size: clamp(48px, 5.2vw, 76px);
+    line-height: .94;
     font-weight: 700;
+    letter-spacing: -.06em;
 }
 
 .big-description {
-    max-width: 500px;
-    font-size: 16px;
+    max-width: 520px;
+
+    padding-top: 7px;
+
+    font-size: 15px;
     line-height: 1.55;
-    color: #444;
-    padding-top: 8px;
+    font-weight: 500;
+    color: #4a4a4a;
 }
 
 .main-works {
-    margin-top: 60px;
+    margin-top: 72px;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 8vw;
 }
 
 .work-number {
-    font-size: 12px;
-    color: #888;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
+
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 500;
+    color: #999;
 }
 
 .work-title {
-    font-size: 25px;
+    max-width: 470px;
+
+    font-size: clamp(21px, 1.8vw, 28px);
     line-height: 1.08;
-    letter-spacing: -.035em;
     font-weight: 700;
-    max-width: 450px;
+    letter-spacing: -.035em;
 }
 
 .work-meta {
-    margin-top: 10px;
-    font-size: 11px;
-    text-transform: uppercase;
+    margin-top: 11px;
+
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: 700;
     letter-spacing: .07em;
-    color: #888;
+    text-transform: uppercase;
+    color: #999;
 }
 
 .work-quote {
-    margin-top: 22px;
+    max-width: 470px;
+
+    margin-top: 24px;
+
     font-size: 14px;
-    line-height: 1.45;
-    max-width: 450px;
-    color: #444;
+    line-height: 1.48;
+    font-weight: 500;
+    color: #555;
 }
 
 .work-link {
     display: inline-block;
-    margin-top: 20px;
-    color: #111;
-    text-decoration: none;
+
+    margin-top: 21px;
+
     font-size: 12px;
-    font-weight: 700;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: .03em;
+
+    text-decoration: none;
+
     border-bottom: 1px solid #111;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 
 .more {
-    margin-top: 52px;
+    margin-top: 64px;
 }
 
 .more-title {
-    font-size: 11px;
+    margin-bottom: 18px;
+
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
     letter-spacing: .08em;
-    color: #888;
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #999;
 }
 
 .more-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 14px 35px;
+    column-gap: 3vw;
+    row-gap: 0;
 }
 
 .more a {
-    color: #111;
+    display: block;
+
+    min-height: 54px;
+    padding: 11px 0 13px;
+
+    border-bottom: 1px solid var(--line);
+
+    font-size: 12px;
+    line-height: 1.35;
+    font-weight: 500;
+
     text-decoration: none;
-    font-size: 13px;
-    line-height: 1.3;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 9px;
 }
 
 .more a:hover {
     border-color: #111;
 }
 
-/* ---------- MOBILE ---------- */
+/* =========================
+   АДАПТАЦИЯ
+   ========================= */
+
+@media (max-width: 900px) {
+
+    section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hero-title .name {
+        font-size: 14vw;
+    }
+
+    .about-intro {
+        max-width: 800px;
+        font-size: 7vw;
+    }
+
+    .big-title {
+        font-size: 7vw;
+    }
+
+    .big-intro {
+        gap: 50px;
+    }
+
+    .main-works {
+        gap: 50px;
+    }
+}
 
 @media (max-width: 700px) {
 
     section {
-        padding: 25px 24px 35px;
+        min-height: auto;
+        padding: 25px 22px 40px;
+    }
+
+    .hero {
+        min-height: 100svh;
     }
 
     .topline,
     .section-head {
-        font-size: 10px;
+        font-size: 9px;
     }
 
-    .hero-title .name {
-        font-size: 18vw;
+    .topline > div:last-child,
+    .section-head > div:last-child {
+        display: none;
+    }
+
+    .hero-title {
+        padding-top: 60px;
     }
 
     .hero-title .small {
         font-size: 12vw;
     }
 
+    .hero-title .name {
+        font-size: 17vw;
+        line-height: .84;
+    }
+
+    .hero-bottom {
+        font-size: 9px;
+    }
+
     .about-intro {
         margin-top: 55px;
-        font-size: 12vw;
+        font-size: 11vw;
+        line-height: .98;
     }
 
     .about-grid {
-        margin-top: 60px;
+        margin-top: 70px;
+        padding-top: 0;
+
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 38px;
+    }
+
+    .about-item p {
+        max-width: 500px;
     }
 
     .about-footer {
-        margin-top: 40px;
+        margin-top: 55px;
     }
 
     .big-intro {
+        margin-top: 50px;
+
         grid-template-columns: 1fr;
         gap: 35px;
-        margin-top: 50px;
     }
 
     .big-title {
-        font-size: 14vw;
+        font-size: 12vw;
+    }
+
+    .big-description {
+        max-width: 600px;
     }
 
     .main-works {
+        margin-top: 55px;
+
         grid-template-columns: 1fr;
-        gap: 45px;
-        margin-top: 50px;
+        gap: 48px;
+    }
+
+    .more {
+        margin-top: 55px;
     }
 
     .more-grid {
@@ -306,35 +459,50 @@ section {
 
 <body>
 
-<!-- 01 / COVER -->
+<!-- =========================
+     00 / ОБЛОЖКА
+     ========================= -->
 
 <section class="hero">
 
     <div class="topline">
-        <div>PORTFOLIO / 2026</div>
-        <div>FINANCE · MEDIA · CONTENT</div>
+        <div>ПОРТФОЛИО / 2026</div>
+        <div>ФИНАНСЫ · МЕДИА · КОНТЕНТ</div>
     </div>
 
     <div class="hero-title">
-        <div class="small">Привет, я</div>
+
+        <div class="small">
+            Привет, я
+        </div>
 
         <div class="name">
             <span>ЯРОСЛАВ</span>
-            <span>РОМАНОВ.</span>
+            <span>РОМАНЦОВ.</span>
         </div>
+
     </div>
 
     <div class="hero-bottom">
-        <div>ФОНДОВЫЙ РЫНОК · ЭКОНОМИКА · КОНТЕНТ</div>
-        <div>↓ SCROLL</div>
+
+        <div>
+            ФОНДОВЫЙ РЫНОК · ЭКОНОМИКА · КОНТЕНТ
+        </div>
+
+        <a href="#about">
+            ↓ ЛИСТАТЬ
+        </a>
+
     </div>
 
 </section>
 
 
-<!-- 01 / ABOUT -->
+<!-- =========================
+     01 / О СЕБЕ
+     ========================= -->
 
-<section class="about">
+<section class="about" id="about">
 
     <div class="section-head">
         <div>01 / О СЕБЕ</div>
@@ -349,52 +517,81 @@ section {
     <div class="about-grid">
 
         <div class="about-item">
+
             <h3>РЕДАКТОР</h3>
+
             <p>
                 Собираю материал целиком: от идеи и структуры
                 до финального текста. Работаю с авторами,
                 экспертами и дизайнерами, отвечаю за логику,
                 точность и качество.
             </p>
+
         </div>
 
+
         <div class="about-item">
+
             <h3>АВТОР</h3>
+
             <p>
                 Пишу аналитические материалы, лонгриды,
                 образовательный и продуктовый контент.
                 Разбираю сложные темы и превращаю их
                 в понятные истории.
             </p>
+
         </div>
 
+
         <div class="about-item">
+
             <h3>КОНТЕНТ-ПРОДЮСЕР</h3>
+
             <p>
                 Веду проекты от идеи до выпуска: концепция,
                 исследование, эксперты, производство и визуал.
                 Выстраиваю процессы и автоматизирую рутину.
             </p>
+
         </div>
 
     </div>
 
+
     <div class="about-footer">
-        <div>ЯРОСЛАВ РОМАНОВ</div>
-        <div>↓ СМОТРЕТЬ РАБОТЫ</div>
+
+        <div>
+            ЯРОСЛАВ РОМАНЦОВ
+        </div>
+
+        <a href="#big-texts">
+            ↓ СМОТРЕТЬ РАБОТЫ
+        </a>
+
     </div>
 
 </section>
 
 
-<!-- 02 / BIG TEXTS -->
+<!-- =========================
+     02 / БОЛЬШИЕ ТЕКСТЫ
+     ========================= -->
 
-<section class="big-texts">
+<section class="big-texts" id="big-texts">
 
     <div class="section-head">
-        <div>02 / БОЛЬШИЕ ТЕКСТЫ</div>
-        <div>РЕДАКТОР · АВТОР · КОНТЕНТ</div>
+
+        <div>
+            02 / БОЛЬШИЕ ТЕКСТЫ
+        </div>
+
+        <div>
+            РЕДАКТОР · АВТОР · КОНТЕНТ
+        </div>
+
     </div>
+
 
     <div class="big-intro">
 
@@ -403,6 +600,7 @@ section {
             моё конкурентное<br>
             преимущество.
         </div>
+
 
         <div class="big-description">
             Веду материал целиком: от идеи и исследования
@@ -419,10 +617,13 @@ section {
 
         <article>
 
-            <div class="work-number">01</div>
+            <div class="work-number">
+                01
+            </div>
 
             <div class="work-title">
-                Как одна семья хотела скупить всё серебро в мире
+                Как одна семья хотела скупить всё
+                серебро в мире
             </div>
 
             <div class="work-meta">
@@ -435,10 +636,13 @@ section {
                 купить и одной унции».
             </div>
 
-            <a class="work-link"
-               href="https://finance.mail.ru/article/krah-rynka-serebra-v-1980-godu-istoriya-spekulyacii-bratev-hant-69195700/"
-               target="_blank">
-                ЧИТАТЬ → 
+            <a
+                class="work-link"
+                href="https://finance.mail.ru/article/krah-rynka-serebra-v-1980-godu-istoriya-spekulyacii-bratev-hant-69195700/"
+                target="_blank"
+                rel="noopener"
+            >
+                ЧИТАТЬ →
             </a>
 
         </article>
@@ -446,7 +650,9 @@ section {
 
         <article>
 
-            <div class="work-number">02</div>
+            <div class="work-number">
+                02
+            </div>
 
             <div class="work-title">
                 Узкое место мировой экономики:
@@ -462,9 +668,12 @@ section {
                 от нескольких километров воды».
             </div>
 
-            <a class="work-link"
-               href="https://marketpower.pro/publications/uzkoe-mesto-mirovoi-ekonomiki-kak-ormuzskii-proliv-vliiaet-na-neft"
-               target="_blank">
+            <a
+                class="work-link"
+                href="https://marketpower.pro/publications/uzkoe-mesto-mirovoi-ekonomiki-kak-ormuzskii-proliv-vliiaet-na-neft"
+                target="_blank"
+                rel="noopener"
+            >
                 ЧИТАТЬ →
             </a>
 
@@ -475,33 +684,56 @@ section {
 
     <div class="more">
 
-        <div class="more-title">ЕЩЁ ТЕКСТЫ</div>
+        <div class="more-title">
+            ЕЩЁ ТЕКСТЫ
+        </div>
+
 
         <div class="more-grid">
 
-            <a href="https://marketpower.pro/publications/den-investora"
-               target="_blank">
+            <a
+                href="https://marketpower.pro/publications/den-investora"
+                target="_blank"
+                rel="noopener"
+            >
                 Один день из жизни дореволюционного инвестора →
             </a>
 
-            <a href="https://finance.mail.ru/article/ryinochek-ne-poreshaet-kak-passivnyie-strategii-lishayut-investorov-vyibora-69223160/"
-               target="_blank">
-                Рыночек не порешает: как пассивные стратегии лишают инвесторов выбора →
+
+            <a
+                href="https://finance.mail.ru/article/ryinochek-ne-poreshaet-kak-passivnyie-strategii-lishayut-investorov-vyibora-69223160/"
+                target="_blank"
+                rel="noopener"
+            >
+                Рыночек не порешает: как пассивные стратегии
+                лишают инвесторов выбора →
             </a>
 
-            <a href="https://marketpower.pro/publications/portfel-imperatora-vo-chto-investirovali-romanovy-i-kuda-propali-ikh-kapitaly"
-               target="_blank">
-                Портфель Императора: во что инвестировали Романовы и куда пропали их капиталы? →
+
+            <a
+                href="https://marketpower.pro/publications/portfel-imperatora-vo-chto-investirovali-romanovy-i-kuda-propali-ikh-kapitaly"
+                target="_blank"
+                rel="noopener"
+            >
+                Портфель Императора: во что инвестировали
+                Романовы и куда пропали их капиталы? →
             </a>
 
-            <a href="https://marketpower.pro/publications/biudzhet-na-povodke-kak-ustroeno-i-pochemu-meniaetsia-glavnoe-finansovoe-pravilo-strany"
-               target="_blank">
-                Бюджет на поводке. Как устроено и почему меняется главное финансовое правило страны? →
+
+            <a
+                href="https://marketpower.pro/publications/biudzhet-na-povodke-kak-ustroeno-i-pochemu-meniaetsia-glavnoe-finansovoe-pravilo-strany"
+                target="_blank"
+                rel="noopener"
+            >
+                Бюджет на поводке. Как устроено и почему
+                меняется главное финансовое правило страны? →
             </a>
+
 
             <a href="#" target="_blank">
                 Торговая война США и Китая →
             </a>
+
 
             <a href="#" target="_blank">
                 Обвал планетарного масштаба →
