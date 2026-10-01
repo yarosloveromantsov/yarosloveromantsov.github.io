@@ -1665,26 +1665,9 @@ font-size: 44px;
     </p>
 
 </div>
-
 </div>
 
-</section>
-<script>
-function toggleFinancialCase(header) {
-
-    const currentCase = header.parentElement;
-
-    document.querySelectorAll('.financial-case').forEach(function(item) {
-
-        if (item !== currentCase) {
-            item.classList.remove('open');
-        }
-
-    });
-
-    currentCase.classList.toggle('open');
-}
-    <!-- =========================
+<!-- =========================
      06 / PRIVATE BANKING
      ========================= -->
 
@@ -1777,6 +1760,21 @@ function toggleFinancialCase(header) {
     </div>
 
 </section>
+<script>
+function toggleFinancialCase(header) {
+
+    const currentCase = header.parentElement;
+
+    document.querySelectorAll('.financial-case').forEach(function(item) {
+
+        if (item !== currentCase) {
+            item.classList.remove('open');
+        }
+
+    });
+
+    currentCase.classList.toggle('open');
+}
 </script>
 </body>
 </html>
