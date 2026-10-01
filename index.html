@@ -948,6 +948,7 @@ font-size: 44px;
     line-height: .9;
     letter-spacing: -.05em;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .wealth-result-label {
@@ -1010,6 +1011,138 @@ font-size: 44px;
     }
 
     .wealth-bottom {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}
+    /* ===== 07 / АВТОМАТИЗАЦИЯ ===== */
+
+.automation {
+    background: #ffffff;
+    color: #111111;
+    min-height: 100vh;
+    padding: 70px 0 80px;
+    box-sizing: border-box;
+}
+
+.automation .section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.automation-intro {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.automation-title {
+    margin: 0;
+    font-size: clamp(64px, 8vw, 120px);
+    line-height: .88;
+    letter-spacing: -.06em;
+    font-weight: 700;
+    max-width: 850px;
+}
+
+.automation-description {
+    max-width: 520px;
+    padding-top: 8px;
+}
+
+.automation-description p {
+    margin: 0 0 22px;
+    font-size: 17px;
+    line-height: 1.45;
+    font-weight: 500;
+}
+
+.automation-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 65px;
+    padding-top: 24px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.automation-result-number {
+    font-size: clamp(38px, 4vw, 62px);
+    line-height: .9;
+    letter-spacing: -.05em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.automation-result-label {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 1.3;
+    font-weight: 800;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #888888;
+    max-width: 200px;
+}
+
+.automation-bottom {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 80px;
+    margin-top: 45px;
+    padding-top: 22px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.automation-bottom-title {
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.automation-bottom-text {
+    max-width: 520px;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #555555;
+}
+
+@media (max-width: 800px) {
+
+    .automation {
+        padding: 40px 25px 60px;
+    }
+
+    .automation .section-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .automation-intro {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .automation-title {
+        font-size: clamp(56px, 15vw, 100px);
+    }
+
+    .automation-results {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .automation-bottom {
         grid-template-columns: 1fr;
         gap: 25px;
     }
@@ -1870,6 +2003,107 @@ font-size: 44px;
     </div>
 
 </div>
+</section>
+    <!-- =========================
+     07 / АВТОМАТИЗАЦИЯ
+     ========================= -->
+
+<section class="automation" id="automation">
+
+    <div class="section-top">
+        <div>07 / АВТОМАТИЗАЦИЯ</div>
+        <div>SOVCOMBANK WEALTH MANAGEMENT · AI + PYTHON</div>
+    </div>
+
+
+    <div class="automation-intro">
+
+        <div class="automation-title">
+            Рутину<br>
+            можно<br>
+            убрать.
+        </div>
+
+
+        <div class="automation-description">
+
+            <p>
+                Я постепенно автоматизирую процессы, которые
+                повторяются из недели в неделю: сбор данных,
+                подготовку материалов и формирование основы
+                для регулярных публикаций.
+            </p>
+
+            <p>
+                Использую AI и Python, хотя профессиональных
+                знаний в программировании у меня нет.
+                Самостоятельно разбираюсь в инструментах,
+                собираю решения и адаптирую их под редакционный
+                процесс.
+            </p>
+
+            <p>
+                В результате мне не нужно каждый раз собирать
+                материал вручную: я контролирую результат,
+                исправляю то, что действительно требует
+                человеческого решения, и освобождаю время
+                для творческой и содержательной работы.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="automation-results">
+
+        <div class="automation-result">
+            <div class="automation-result-number">
+                1,5 → 0:20
+            </div>
+            <div class="automation-result-label">
+                часа на еженедельную рубрику
+            </div>
+        </div>
+
+        <div class="automation-result">
+            <div class="automation-result-number">
+                AI + Python
+            </div>
+            <div class="automation-result-label">
+                инструменты автоматизации
+            </div>
+        </div>
+
+        <div class="automation-result">
+            <div class="automation-result-number">
+                CONTROL
+            </div>
+            <div class="automation-result-label">
+                контроль результата вместо ручной сборки
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="automation-bottom">
+
+        <div class="automation-bottom-title">
+            Меньше рутины.<br>
+            Больше времени на идеи.
+        </div>
+
+        <div class="automation-bottom-text">
+            Автоматизация позволяет сокращать количество
+            повторяющихся операций, снижать вероятность
+            механических ошибок и оставлять больше времени
+            на исследование, концепцию и другие задачи,
+            где действительно нужен человек.
+        </div>
+
+    </div>
+
 </section>
 <script>
 function toggleFinancialCase(header) {
