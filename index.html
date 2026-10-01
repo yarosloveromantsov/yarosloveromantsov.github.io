@@ -518,6 +518,168 @@ font-size: 44px;
     font-weight: 700;
     color: #111;
 }
+    /* =========================
+   05 / ПРОДВИЖЕНИЕ
+   ========================= */
+
+.promotion {
+    background: var(--white);
+}
+
+.promotion-intro {
+    margin-top: 62px;
+
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 6vw;
+
+    align-items: start;
+}
+
+.promotion-title {
+    font-size: clamp(48px, 5vw, 72px);
+    line-height: .95;
+    font-weight: 700;
+    letter-spacing: -.06em;
+}
+
+.promotion-title span {
+    color: #777;
+}
+
+.promotion-description {
+    max-width: 620px;
+
+    padding-top: 4px;
+
+    font-size: 18px;
+    line-height: 1.48;
+    font-weight: 500;
+
+    color: #444;
+}
+
+.promotion-results {
+    margin-top: 70px;
+
+    display: grid;
+    grid-template-columns: 1.35fr .65fr;
+    gap: 8vw;
+
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+}
+
+.promotion-main-number {
+    font-size: clamp(72px, 9vw, 130px);
+    line-height: .82;
+    font-weight: 700;
+    letter-spacing: -.07em;
+}
+
+.promotion-main-label {
+    margin-top: 22px;
+
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+
+    color: #999;
+}
+
+.promotion-main-price {
+    margin-top: 34px;
+
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -.04em;
+}
+
+.promotion-main-price span {
+    color: #999;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+.promotion-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion-side-title {
+    margin-bottom: 17px;
+
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    color: #999;
+}
+
+.promotion-campaign {
+    padding: 15px 0 16px;
+
+    border-top: 1px solid var(--line);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.promotion-campaign:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.promotion-campaign-name {
+    max-width: 260px;
+
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.promotion-campaign-result {
+    text-align: right;
+    white-space: nowrap;
+
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.promotion-campaign-result span {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 10px;
+    font-weight: 600;
+    color: #999;
+}
+
+.promotion-footer {
+    margin-top: auto;
+    padding-top: 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+
+    color: #999;
+}
 /* =========================
    ПЛАНШЕТ
    ========================= */
@@ -1317,7 +1479,124 @@ font-size: 44px;
     </div>
 
 </section>
+<!-- =========================
+     05 / ПРОДВИЖЕНИЕ
+     ========================= -->
 
+<section class="promotion" id="promotion">
+
+    <div class="section-head">
+        <div>05 / ПРОДВИЖЕНИЕ</div>
+        <div>НАРРАТИВ · КРЕАТИВ · ВК</div>
+    </div>
+
+
+    <div class="promotion-intro">
+
+        <div class="promotion-title">
+            Реклама начинается<br>
+            <span>с того, что сказать.</span>
+        </div>
+
+
+        <div class="promotion-description">
+            Участвовал в разработке концепции и запуске рекламных
+            кампаний во ВКонтакте: формулировал нарративы и рекламные
+            сообщения, определял ключевые триггеры, прорабатывал
+            варианты креативов и учитывал ограничения модерации.
+            Точечно подключался к настройке кампаний, используя
+            предыдущий опыт работы с рекламным кабинетом.
+        </div>
+
+    </div>
+
+
+    <div class="promotion-results">
+
+        <div class="promotion-main">
+
+            <div class="promotion-main-number">
+                4 802
+            </div>
+
+            <div class="promotion-main-label">
+                результата · кампания «Личные финансы»
+            </div>
+
+            <div class="promotion-main-price">
+                17,34 ₽
+                <span>стоимость результата</span>
+            </div>
+
+        </div>
+
+
+        <div class="promotion-side">
+
+            <div class="promotion-side-title">
+                Другие кампании
+            </div>
+
+
+            <div class="promotion-campaign">
+
+                <div class="promotion-campaign-name">
+                    Цены в будущем
+                </div>
+
+                <div class="promotion-campaign-result">
+                    158
+                    <span>46,11 ₽ / результат</span>
+                </div>
+
+            </div>
+
+
+            <div class="promotion-campaign">
+
+                <div class="promotion-campaign-name">
+                    Акции и продукты
+                </div>
+
+                <div class="promotion-campaign-result">
+                    250
+                    <span>68,34 ₽ / результат</span>
+                </div>
+
+            </div>
+
+
+            <div class="promotion-campaign">
+
+                <div class="promotion-campaign-name">
+                    Посты из ВК на подписчиков
+                </div>
+
+                <div class="promotion-campaign-result">
+                    225
+                    <span>81,33 ₽ / результат</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="promotion-footer">
+
+        <div>
+            ЯРОСЛАВ РОМАНЦОВ
+        </div>
+
+        <div>
+            ВК · 31.01.2026 — 30.09.2026
+        </div>
+
+    </div>
+
+</section>
 <script>
 function toggleFinancialCase(header) {
 
