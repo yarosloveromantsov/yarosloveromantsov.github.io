@@ -1072,7 +1072,7 @@ font-size: 44px;
 
 .automation-results {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 50px;
     margin-top: 65px;
     padding-top: 24px;
@@ -1084,7 +1084,6 @@ font-size: 44px;
     line-height: .9;
     letter-spacing: -.05em;
     font-weight: 700;
-    white-space: nowrap;
 }
 
 .automation-result-label {
@@ -1322,7 +1321,6 @@ font-size: 44px;
 .premium-footer {
     margin-top: 65px;
     padding-top: 25px;
-    border-top: 1px solid var(--line);
 }
 
 .premium-footer-principle {
@@ -2374,9 +2372,9 @@ font-size: 44px;
 <div class="automation-result-number">
     КОНТРОЛЬ
 </div>
-            <div class="automation-result-label">
-                контроль результата вместо ручной сборки
-            </div>
+<div class="automation-result-label">
+    контроль результата вместо ручной работы
+</div>
         </div>
 
     </div>
