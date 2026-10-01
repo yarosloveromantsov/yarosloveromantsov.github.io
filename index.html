@@ -937,10 +937,27 @@ font-size: 44px;
 .wealth-results {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 0;
     margin-top: 65px;
     padding-top: 24px;
     border-top: 1px solid #d9d9d9;
+}
+
+.wealth-result:nth-child(1) {
+    text-align: left;
+}
+
+.wealth-result:nth-child(2) {
+    text-align: center;
+}
+
+.wealth-result:nth-child(3) {
+    text-align: right;
+}
+
+.wealth-result:nth-child(2) .wealth-result-label,
+.wealth-result:nth-child(3) .wealth-result-label {
+    margin-left: auto;
 }
 
 .wealth-result-number {
@@ -2059,7 +2076,7 @@ font-size: 44px;
 
         <div class="automation-result">
             <div class="automation-result-number">
-                1,5 → 0:20
+                1,5 → 0,2
             </div>
             <div class="automation-result-label">
                 часа на еженедельную рубрику
