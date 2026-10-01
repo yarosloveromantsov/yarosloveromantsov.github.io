@@ -358,7 +358,120 @@ font-size: 44px;
 .more a:hover {
     border-color: #111;
 }
+/* =========================
+   04 / ФИНАНСОВЫЙ КОНТЕНТ
+   ========================= */
 
+.financial-content {
+    background: var(--white);
+}
+
+.financial-intro {
+    margin-top: 62px;
+    max-width: 850px;
+}
+
+.financial-title {
+    font-size: clamp(48px, 5vw, 72px);
+    line-height: .95;
+    font-weight: 700;
+    letter-spacing: -.06em;
+}
+
+.financial-title span {
+    color: #777;
+}
+
+.financial-cases {
+    margin-top: 68px;
+    border-top: 1px solid var(--line);
+}
+
+.financial-case {
+    border-bottom: 1px solid var(--line);
+}
+
+.financial-case-head {
+    display: grid;
+    grid-template-columns: 55px 1fr 35px;
+    align-items: center;
+    min-height: 86px;
+    cursor: pointer;
+}
+
+.financial-case-number {
+    align-self: start;
+    padding-top: 27px;
+    font-size: 11px;
+    line-height: 1;
+    color: #999;
+}
+
+.financial-case-title {
+    padding: 22px 0;
+    font-size: clamp(20px, 1.8vw, 28px);
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: -.035em;
+}
+
+.financial-case-arrow {
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 300;
+    color: #777;
+    transition: transform .25s ease;
+}
+
+.financial-case.open .financial-case-arrow {
+    transform: rotate(45deg);
+}
+
+.financial-case-body {
+    display: none;
+    padding: 0 35px 34px 55px;
+}
+
+.financial-case.open .financial-case-body {
+    display: block;
+}
+
+.financial-case-description {
+    max-width: 760px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #555;
+}
+
+.financial-case-placeholder {
+    width: 100%;
+    min-height: 170px;
+    border: 1px dashed #c8c8c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.financial-footer {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #999;
+}
 
 /* =========================
    ПЛАНШЕТ
@@ -794,6 +907,162 @@ font-size: 44px;
     </div>
 
 </section>
+<!-- =========================
+     04 / ФИНАНСОВЫЙ КОНТЕНТ
+     ========================= -->
 
+<section class="financial-content" id="financial-content">
+
+    <div class="section-head">
+        <div>04 / ФИНАНСОВЫЙ КОНТЕНТ</div>
+        <div>ОБРАЗОВАТЕЛЬНЫЙ КОНТЕНТ · ФИНАНСЫ</div>
+    </div>
+
+    <div class="financial-intro">
+        <div class="financial-title">
+            Сложные финансовые идеи<br>
+            <span>можно объяснять просто.</span>
+        </div>
+    </div>
+
+    <div class="financial-cases">
+
+        <!-- ПОСТ 01 -->
+
+        <article class="financial-case">
+
+            <div class="financial-case-head" onclick="toggleFinancialCase(this)">
+
+                <div class="financial-case-number">
+                    01
+                </div>
+
+                <div class="financial-case-title">
+                    Сложный процент: как незаметное становится неизбежным
+                </div>
+
+                <div class="financial-case-arrow">
+                    +
+                </div>
+
+            </div>
+
+            <div class="financial-case-body">
+
+                <div class="financial-case-description">
+                    Объяснение механики сложного процента через несколько
+                    последовательных примеров: вклад, облигации, акции и ИИС-3.
+                    Сложная финансовая идея разбирается на конкретных числах
+                    и понятных сценариях.
+                </div>
+
+                <div class="financial-case-placeholder">
+                    Здесь будет материал / скриншоты поста
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ПОСТ 02 -->
+
+        <article class="financial-case">
+
+            <div class="financial-case-head" onclick="toggleFinancialCase(this)">
+
+                <div class="financial-case-number">
+                    02
+                </div>
+
+                <div class="financial-case-title">
+                    Как покупать акции дешево?
+                </div>
+
+                <div class="financial-case-arrow">
+                    +
+                </div>
+
+            </div>
+
+            <div class="financial-case-body">
+
+                <div class="financial-case-description">
+                    Объяснение мультипликатора P/E с нуля:
+                    определение, формула, расчёт на простом примере
+                    и интерпретация показателя при сравнении компаний.
+                </div>
+
+                <div class="financial-case-placeholder">
+                    Здесь будет материал / скриншоты поста
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ПОСТ 03 -->
+
+        <article class="financial-case">
+
+            <div class="financial-case-head" onclick="toggleFinancialCase(this)">
+
+                <div class="financial-case-number">
+                    03
+                </div>
+
+                <div class="financial-case-title">
+                    Когда инвестору оправдано использовать деривативы
+                </div>
+
+                <div class="financial-case-arrow">
+                    +
+                </div>
+
+            </div>
+
+            <div class="financial-case-body">
+
+                <div class="financial-case-description">
+                    Практическое объяснение хеджирования:
+                    через ситуацию с портфелем на ₽10 млн показано,
+                    как фьючерс может временно снизить рыночный риск
+                    без продажи базовых активов.
+                </div>
+
+                <div class="financial-case-placeholder">
+                    Здесь будет материал / скриншоты поста
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="financial-footer">
+        <div>ЯРОСЛАВ РОМАНЦОВ</div>
+        <div>↓ РАСКРЫТЬ МАТЕРИАЛ</div>
+    </div>
+
+</section>
+
+<script>
+function toggleFinancialCase(header) {
+
+    const currentCase = header.parentElement;
+
+    document.querySelectorAll('.financial-case').forEach(function(item) {
+
+        if (item !== currentCase) {
+            item.classList.remove('open');
+        }
+
+    });
+
+    currentCase.classList.toggle('open');
+}
+</script>
 </body>
 </html>
