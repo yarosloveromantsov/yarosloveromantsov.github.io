@@ -936,8 +936,8 @@ font-size: 44px;
 
 .wealth-results {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 70px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
     margin-top: 65px;
     padding-top: 24px;
     border-top: 1px solid #d9d9d9;
@@ -945,6 +945,7 @@ font-size: 44px;
 
 .wealth-result {
     min-width: 0;
+    text-align: left;
 }
 
 .wealth-result-number {
@@ -964,10 +965,6 @@ font-size: 44px;
     text-transform: uppercase;
     color: #888888;
     max-width: 180px;
-}
-.wealth-result:nth-child(2) .wealth-result-number,
-.wealth-result:nth-child(3) .wealth-result-number {
-    font-size: clamp(32px, 3.2vw, 50px);
 }
 
 .wealth-bottom {
@@ -1997,20 +1994,18 @@ font-size: 44px;
         </div>
     </div>
 
-    <div class="wealth-result">
-        <div class="wealth-result-number">PARTNER → TOV</div>
-        <div class="wealth-result-label">
-            адаптация партнёрских материалов
-        </div>
+   <div class="wealth-result">
+    <div class="wealth-result-number">ПАРТНЁРСКИЕ МАТЕРИАЛЫ</div>
+    <div class="wealth-result-label">
+        адаптация под стиль канала
     </div>
+</div>
 
-    <div class="wealth-result">
-        <div class="wealth-result-number">CONTENT PLAN</div>
-        <div class="wealth-result-label">
-            единая публикационная сетка
-        </div>
+<div class="wealth-result">
+    <div class="wealth-result-number">ЕДИНАЯ СЕТКА</div>
+    <div class="wealth-result-label">
+        планирование публикаций
     </div>
-
 </div>
 </section>
     <!-- =========================
