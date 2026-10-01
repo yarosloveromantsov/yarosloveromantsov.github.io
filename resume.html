@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ярослав Романцов — Резюме</title>
 
     <style>
@@ -16,8 +17,8 @@
 
         body {
             margin: 0;
-            background: #fff;
-            color: #111;
+            background: #ffffff;
+            color: #111111;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 15px;
             line-height: 1.55;
@@ -26,38 +27,41 @@
         .page {
             max-width: 1000px;
             margin: 0 auto;
-            padding: 70px 50px 90px;
+            padding: 65px 50px 90px;
         }
 
-        /* HEADER */
+
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
             display: grid;
-            grid-template-columns: 1fr 280px;
+            grid-template-columns: 1fr 270px;
             gap: 60px;
-            padding-bottom: 45px;
+            padding-bottom: 42px;
             border-bottom: 1px solid #111;
         }
 
         .name {
+            margin: 0 0 25px;
             font-size: 58px;
             line-height: 0.95;
             letter-spacing: -0.045em;
             font-weight: 700;
-            margin: 0 0 28px;
         }
 
         .position {
-            font-size: 22px;
-            line-height: 1.25;
-            letter-spacing: -0.02em;
             margin: 0;
+            font-size: 21px;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
         }
 
         .contacts {
+            align-self: end;
             font-size: 14px;
             line-height: 1.7;
-            align-self: end;
         }
 
         .contacts a {
@@ -66,11 +70,14 @@
             border-bottom: 1px solid #aaa;
         }
 
-        /* PROFILE */
+
+        /* =========================
+           PROFILE
+        ========================= */
 
         .profile {
-            padding: 38px 0 50px;
-            max-width: 760px;
+            max-width: 790px;
+            padding: 38px 0 52px;
         }
 
         .profile p {
@@ -80,31 +87,40 @@
             letter-spacing: -0.01em;
         }
 
-        /* SECTIONS */
+
+        /* =========================
+           SECTIONS
+        ========================= */
 
         section {
             margin-bottom: 60px;
         }
 
         .section-title {
-            font-size: 12px;
-            line-height: 1;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            font-weight: 700;
             margin: 0 0 30px;
             padding-bottom: 12px;
             border-bottom: 1px solid #ccc;
+
+            font-size: 11px;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: 0.13em;
+            font-weight: 700;
         }
 
-        /* EXPERIENCE */
+
+        /* =========================
+           EXPERIENCE
+        ========================= */
 
         .job {
             display: grid;
-            grid-template-columns: 190px 1fr;
+            grid-template-columns: 185px 1fr;
             gap: 45px;
-            padding-bottom: 48px;
-            margin-bottom: 48px;
+
+            padding-bottom: 46px;
+            margin-bottom: 46px;
+
             border-bottom: 1px solid #ddd;
         }
 
@@ -115,27 +131,23 @@
 
         .job-date {
             font-size: 13px;
-            color: #666;
             line-height: 1.5;
+            color: #666;
         }
 
         .job-company {
+            margin-bottom: 4px;
+
             font-size: 23px;
             line-height: 1.15;
-            font-weight: 700;
             letter-spacing: -0.025em;
-            margin-bottom: 5px;
+            font-weight: 700;
         }
 
         .job-role {
+            margin-bottom: 18px;
             font-size: 16px;
-            margin-bottom: 18px;
-        }
-
-        .job-note {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 18px;
+            line-height: 1.35;
         }
 
         .job ul {
@@ -148,25 +160,63 @@
             padding-left: 3px;
         }
 
+
+        /* =========================
+           CAREER GROWTH
+        ========================= */
+
+        .job-promotion {
+            margin: 20px 0 25px;
+            padding: 16px 18px;
+
+            border-left: 3px solid #111;
+            background: #f5f5f5;
+        }
+
+        .job-promotion-label {
+            margin-bottom: 6px;
+
+            font-size: 10px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 700;
+        }
+
+        .job-promotion-text {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+
+        /* =========================
+           RESULTS
+        ========================= */
+
         .job-results {
-            margin-top: 22px;
+            margin-top: 23px;
             padding: 17px 20px;
             background: #f5f5f5;
         }
 
         .job-results-title {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-weight: 700;
             margin-bottom: 10px;
+
+            font-size: 10px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 700;
         }
 
         .job-results ul {
             margin-bottom: 0;
         }
 
-        /* EDUCATION / SKILLS */
+
+        /* =========================
+           EDUCATION + SKILLS
+        ========================= */
 
         .bottom-grid {
             display: grid;
@@ -179,15 +229,16 @@
         }
 
         .education-year {
+            margin-bottom: 4px;
+
             font-size: 13px;
             color: #666;
-            margin-bottom: 4px;
         }
 
         .education-name {
             font-size: 17px;
-            font-weight: 700;
             line-height: 1.3;
+            font-weight: 700;
         }
 
         .education-speciality {
@@ -201,9 +252,11 @@
         }
 
         .skill {
-            border: 1px solid #ccc;
             padding: 7px 10px;
+            border: 1px solid #ccc;
+
             font-size: 13px;
+            line-height: 1.2;
         }
 
         .languages {
@@ -214,18 +267,26 @@
             margin-bottom: 6px;
         }
 
-        /* FOOTER */
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             padding-top: 35px;
             border-top: 1px solid #111;
-            color: #777;
+
             font-size: 12px;
+            color: #777;
         }
 
-        /* MOBILE */
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 700px) {
+
             .page {
                 padding: 40px 22px 60px;
             }
@@ -247,6 +308,10 @@
                 margin-top: 30px;
             }
 
+            .profile {
+                padding: 32px 0 42px;
+            }
+
             .profile p {
                 font-size: 17px;
             }
@@ -265,26 +330,41 @@
             }
         }
 
+
+        /* =========================
+           PRINT / PDF
+        ========================= */
+
         @media print {
+
             body {
-                font-size: 12px;
+                font-size: 11.5px;
             }
 
             .page {
                 max-width: none;
-                padding: 25px;
+                padding: 25px 30px 40px;
             }
 
             header {
                 grid-template-columns: 1fr 230px;
+                gap: 40px;
             }
 
             .name {
                 font-size: 42px;
             }
 
+            .position {
+                font-size: 17px;
+            }
+
             .profile {
                 padding: 25px 0 30px;
+            }
+
+            .profile p {
+                font-size: 14px;
             }
 
             section {
@@ -296,6 +376,15 @@
                 margin-bottom: 25px;
             }
 
+            .job-company {
+                font-size: 19px;
+            }
+
+            .job-promotion,
+            .job-results {
+                break-inside: avoid;
+            }
+
             a {
                 color: #111 !important;
             }
@@ -303,31 +392,61 @@
     </style>
 </head>
 
+
 <body>
 
 <div class="page">
 
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
     <header>
+
         <div>
-            <h1 class="name">Ярослав<br>Романцов</h1>
+
+            <h1 class="name">
+                Ярослав<br>
+                Романцов
+            </h1>
+
             <p class="position">
                 Выпускающий редактор ·<br>
                 Экономический редактор · Автор
             </p>
+
         </div>
 
+
         <div class="contacts">
+
             Санкт-Петербург<br>
-            Telegram: <a href="https://t.me/yaroboi">@yaroboi</a><br>
+            28.03.1997<br>
+
+            Telegram:
+            <a href="https://t.me/yaroboi">
+                @yaroboi
+            </a><br>
+
             <a href="mailto:rainbowcrocodile1@gmail.com">
                 rainbowcrocodile1@gmail.com
             </a><br>
+
             +7 (923) 709-27-23
+
         </div>
+
     </header>
 
 
+
+    <!-- =========================
+         PROFILE
+    ========================= -->
+
     <div class="profile">
+
         <p>
             Более шести лет работаю с контентом, из них более четырёх —
             в финансовой сфере. Специализируюсь на экономической и
@@ -335,12 +454,23 @@
             материалы, лонгриды и сценарии, разрабатываю контентные
             концепции и выстраиваю редакционные процессы.
         </p>
+
     </div>
 
 
-    <section>
-        <h2 class="section-title">Опыт работы</h2>
 
+    <!-- =========================
+         EXPERIENCE
+    ========================= -->
+
+    <section>
+
+        <h2 class="section-title">
+            Опыт работы
+        </h2>
+
+
+        <!-- MARKET POWER -->
 
         <article class="job">
 
@@ -349,20 +479,39 @@
                 настоящее время
             </div>
 
+
             <div>
-                <div class="job-company">Market Power</div>
+
+                <div class="job-company">
+                    Market Power
+                </div>
 
                 <div class="job-role">
-                    Выпускающий редактор
+                    <strong>
+                        Выпускающий редактор
+                    </strong>
                 </div>
 
-                <div class="job-note">
-                    Начал работу как контент-мейкер, постепенно
-                    расширил зону ответственности до выпуска контента,
-                    координации производства и развития редакционных процессов.
+
+                <div class="job-promotion">
+
+                    <div class="job-promotion-label">
+                        Карьерный рост
+                    </div>
+
+                    <div class="job-promotion-text">
+                        Пришёл в команду как контент-мейкер.
+                        В процессе работы перешёл на позицию выпускающего
+                        редактора, расширив зону ответственности от создания
+                        отдельных материалов до координации производства
+                        и развития редакционных процессов.
+                    </div>
+
                 </div>
+
 
                 <ul>
+
                     <li>
                         Разработка и производство контента: от идеи и
                         исследования темы до публикации и оценки результата.
@@ -371,7 +520,7 @@
                     <li>
                         Редактура и выпуск аналитических материалов,
                         лонгридов, образовательного контента, сценариев
-                        видео, спецпроектов и материалов для социальных сетей.
+                        видео и спецпроектов.
                     </li>
 
                     <li>
@@ -381,14 +530,14 @@
 
                     <li>
                         Планирование контента, формирование редакционной
-                        сетки, постановка задач авторам, дизайнерам и другим
-                        участникам производства.
+                        сетки, постановка задач авторам и дизайнерам,
+                        контроль качества.
                     </li>
 
                     <li>
                         Работа с аналитиками и экспертами: постановка задач,
-                        интервьюирование, фактчекинг и перевод сложной
-                        финансовой экспертизы в понятный для аудитории формат.
+                        фактчекинг и перевод сложной финансовой экспертизы
+                        в понятный для аудитории формат.
                     </li>
 
                     <li>
@@ -399,76 +548,58 @@
                     </li>
 
                     <li>
-                        Разработка и запуск новых контентных форматов
-                        и специальных проектов, включая YouTube-проекты.
-                    </li>
-
-                    <li>
-                        Разработка концепции и редакционной модели
-                        открытого Telegram-канала Private Banking
-                        для привлечения потенциальных клиентов.
+                        Курирование стажёров и новых сотрудников,
+                        постановка задач и консультационная поддержка.
                     </li>
 
                     <li>
                         Автоматизация регулярных редакционных процессов
-                        с использованием AI и Python: сбор данных,
-                        подготовка материалов и шаблонов для повторяющихся
-                        публикаций.
+                        с использованием AI и Python.
                     </li>
 
-                    <li>
-                        Курирование стажёров и новых сотрудников,
-                        постановка задач и контроль качества.
-                    </li>
-
-                    <li>
-                        Участие в разработке и запуске рекламных кампаний
-                        во «ВКонтакте»: рекламные сообщения, креативные
-                        концепции и тестирование форматов.
-                    </li>
                 </ul>
 
+
                 <div class="job-results">
-                    <div class="job-results-title">Ключевые результаты</div>
+
+                    <div class="job-results-title">
+                        Ключевые результаты
+                    </div>
 
                     <ul>
+
                         <li>
                             Участие в двух крупных проектах с Банком России.
                         </li>
 
                         <li>
-                            Автоматизация регулярных редакционных процессов:
-                            одна из еженедельных рубрик сокращена примерно
-                            с 1,5 часа до 20 минут ручной работы.
+                            Автоматизация еженедельной редакционной рубрики:
+                            время подготовки сокращено примерно с 1,5 часа
+                            до 20 минут ручной работы.
                         </li>
 
                         <li>
                             Развитие контентной системы Private Banking:
-                            шесть постоянных форматов и регулярное планирование
-                            публикаций.
-                        </li>
-
-                        <li>
-                            Разработка концепции и подготовка к запуску
-                            нового открытого Telegram-канала Private Banking.
+                            шесть постоянных форматов и регулярное
+                            редакционное планирование.
                         </li>
 
                         <li>
                             Разработка концепции и участие в производстве
-                            YouTube-канала Market Power.
+                            нового YouTube-канала Market Power.
                         </li>
 
-                        <li>
-                            Участие в рекламных кампаниях во «ВКонтакте»:
-                            одна из кампаний привлекла 4 802 подписчика
-                            при стоимости 17,34 ₽ за подписчика.
-                        </li>
                     </ul>
+
                 </div>
+
             </div>
 
         </article>
 
+
+
+        <!-- COFLUENCIA -->
 
         <article class="job">
 
@@ -477,25 +608,53 @@
                 январь 2024
             </div>
 
+
             <div>
-                <div class="job-company">Cofluencia</div>
+
+                <div class="job-company">
+                    Cofluencia
+                </div>
 
                 <div class="job-role">
                     Content Manager / Marketing Manager / Copywriter
                 </div>
 
+
                 <ul>
-                    <li>Написание постов и статей.</li>
-                    <li>Разработка контент-плана для социальных сетей.</li>
-                    <li>Разработка маркетинговых стратегий и конкурсов.</li>
-                    <li>Постановка технических заданий дизайнерам.</li>
-                    <li>Создание 3D-моделей.</li>
-                    <li>Монтаж видео и написание сценариев.</li>
+
+                    <li>
+                        Написание постов и статей.
+                    </li>
+
+                    <li>
+                        Разработка контент-плана для социальных сетей.
+                    </li>
+
+                    <li>
+                        Разработка маркетинговых стратегий и конкурсов.
+                    </li>
+
+                    <li>
+                        Постановка технических заданий дизайнерам.
+                    </li>
+
+                    <li>
+                        Создание 3D-моделей.
+                    </li>
+
+                    <li>
+                        Монтаж видео и написание сценариев.
+                    </li>
+
                 </ul>
+
             </div>
 
         </article>
 
+
+
+        <!-- IWAY -->
 
         <article class="job">
 
@@ -504,35 +663,50 @@
                 май 2023
             </div>
 
+
             <div>
-                <div class="job-company">i'way</div>
+
+                <div class="job-company">
+                    i'way
+                </div>
 
                 <div class="job-role">
                     Digital-marketer
                 </div>
 
+
                 <ul>
+
                     <li>
                         Создание, вёрстка, оформление и отправка рассылок.
                     </li>
+
                     <li>
                         Настройка рекламных кампаний в Google Ads,
                         VK, MyTarget и Avito.
                     </li>
+
                     <li>
                         Поиск релевантных рекламных площадок и блогеров.
                     </li>
+
                     <li>
                         Подключение и ведение affiliate-сетей.
                     </li>
+
                     <li>
                         Работа с веб-мастерами и рекламными партнёрами.
                     </li>
+
                 </ul>
+
             </div>
 
         </article>
 
+
+
+        <!-- NIBBLE -->
 
         <article class="job">
 
@@ -541,40 +715,53 @@
                 май 2022
             </div>
 
+
             <div>
-                <div class="job-company">Nibble ITSF Holding</div>
+
+                <div class="job-company">
+                    Nibble ITSF Holding
+                </div>
 
                 <div class="job-role">
                     Digital marketer / Affiliate manager / Traffic manager
                 </div>
 
+
                 <ul>
+
                     <li>
                         Управление проектами и межкомандное взаимодействие.
                     </li>
+
                     <li>
                         Работа с SEO, продуктом и аналитическими инструментами.
                     </li>
+
                     <li>
                         Разработка маркетинговых стратегий и лендинг-страниц.
                     </li>
+
                     <li>
                         Работа с партнёрскими сетями и рекламодателями.
                     </li>
+
                     <li>
                         Анализ конкурентов и рыночных тенденций.
                     </li>
+
                     <li>
                         Email-маркетинг и создание воронок.
                     </li>
-                    <li>
-                        Создание рекламных видео и креативов.
-                    </li>
+
                 </ul>
+
             </div>
 
         </article>
 
+
+
+        <!-- INVESTMARKET -->
 
         <article class="job">
 
@@ -583,32 +770,44 @@
                 июль 2021
             </div>
 
+
             <div>
-                <div class="job-company">ИнвестМаркет</div>
+
+                <div class="job-company">
+                    ИнвестМаркет
+                </div>
 
                 <div class="job-role">
                     Digital-маркетолог / Webmaster
                 </div>
 
+
                 <ul>
+
                     <li>
                         Создание рекламных кампаний для стран Европы и Азии.
                     </li>
+
                     <li>
                         Создание и монтаж видео-креативов.
                     </li>
+
                     <li>
                         Копирайтинг и подготовка рекламных материалов.
                     </li>
+
                     <li>
                         Настройка таргетинга, ведение рекламных кампаний
                         и анализ статистики.
                     </li>
+
                     <li>
                         Создание рекламных планов и постановка задач
                         переводчикам.
                     </li>
+
                 </ul>
+
             </div>
 
         </article>
@@ -616,72 +815,173 @@
     </section>
 
 
+
+    <!-- =========================
+         EDUCATION + SKILLS
+    ========================= -->
+
     <section>
+
         <div class="bottom-grid">
 
+
+            <!-- EDUCATION -->
+
             <div>
-                <h2 class="section-title">Образование</h2>
+
+                <h2 class="section-title">
+                    Образование
+                </h2>
+
 
                 <div class="education-item">
-                    <div class="education-year">2024</div>
-                    <div class="education-name">ИМИСК</div>
+
+                    <div class="education-year">
+                        2024
+                    </div>
+
+                    <div class="education-name">
+                        ИМИСК
+                    </div>
+
                     <div class="education-speciality">
                         Менеджмент, управление организацией
                     </div>
+
                 </div>
 
+
                 <div class="education-item">
-                    <div class="education-year">2018</div>
+
+                    <div class="education-year">
+                        2018
+                    </div>
+
                     <div class="education-name">
                         Новосибирский государственный университет
                     </div>
+
                     <div class="education-speciality">
                         Экономический факультет, социология
                     </div>
+
                 </div>
 
+
                 <div class="education-item">
-                    <div class="education-year">2020</div>
-                    <div class="education-name">GeekBrains</div>
+
+                    <div class="education-year">
+                        2020
+                    </div>
+
+                    <div class="education-name">
+                        GeekBrains
+                    </div>
+
                     <div class="education-speciality">
                         Интернет-маркетинг
                     </div>
+
                 </div>
+
             </div>
 
 
+
+            <!-- SKILLS -->
+
             <div>
-                <h2 class="section-title">Навыки</h2>
+
+                <h2 class="section-title">
+                    Навыки
+                </h2>
+
 
                 <div class="skills">
-                    <span class="skill">Редактура</span>
-                    <span class="skill">Контент-стратегия</span>
-                    <span class="skill">Копирайтинг</span>
-                    <span class="skill">Лонгриды</span>
-                    <span class="skill">Написание статей</span>
-                    <span class="skill">Сценарии</span>
-                    <span class="skill">Контент-маркетинг</span>
-                    <span class="skill">SMM</span>
-                    <span class="skill">FinTech</span>
-                    <span class="skill">Figma</span>
-                    <span class="skill">Blender 3D</span>
-                    <span class="skill">Python</span>
-                    <span class="skill">AI-инструменты</span>
+
+                    <span class="skill">
+                        Редактура
+                    </span>
+
+                    <span class="skill">
+                        Контент-стратегия
+                    </span>
+
+                    <span class="skill">
+                        Копирайтинг
+                    </span>
+
+                    <span class="skill">
+                        Лонгриды
+                    </span>
+
+                    <span class="skill">
+                        Написание статей
+                    </span>
+
+                    <span class="skill">
+                        Сценарии
+                    </span>
+
+                    <span class="skill">
+                        Контент-маркетинг
+                    </span>
+
+                    <span class="skill">
+                        SMM
+                    </span>
+
+                    <span class="skill">
+                        FinTech
+                    </span>
+
+                    <span class="skill">
+                        Figma
+                    </span>
+
+                    <span class="skill">
+                        Blender 3D
+                    </span>
+
+                    <span class="skill">
+                        Python
+                    </span>
+
+                    <span class="skill">
+                        AI-инструменты
+                    </span>
+
                 </div>
 
+
                 <div class="languages">
-                    <div><strong>Русский</strong> — родной</div>
-                    <div><strong>Английский</strong> — B2</div>
+
+                    <div>
+                        <strong>Русский</strong> — родной
+                    </div>
+
+                    <div>
+                        <strong>Английский</strong> — B2
+                    </div>
+
                 </div>
+
             </div>
 
         </div>
+
     </section>
 
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
     <footer>
         Ярослав Романцов · Санкт-Петербург
     </footer>
+
 
 </div>
 
