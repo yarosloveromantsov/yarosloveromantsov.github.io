@@ -1444,11 +1444,69 @@ font-size: 44px;
         font-size: 17px;
     }
 }
+    .mobile-warning {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    body > *:not(.mobile-warning) {
+        display: none !important;
+    }
+
+    .mobile-warning {
+        display: flex;
+        min-height: 100vh;
+        padding: 35vh 25px 40px;
+        box-sizing: border-box;
+        flex-direction: column;
+        background: #ffffff;
+        color: #111111;
+    }
+
+    .mobile-warning-title {
+        font-size: 11vw;
+        line-height: .9;
+        letter-spacing: -.055em;
+        font-weight: 700;
+    }
+
+    .mobile-warning-text {
+        margin-top: 30px;
+        font-size: 17px;
+        line-height: 1.4;
+        font-weight: 500;
+        color: #555555;
+    }
+
+    .mobile-warning-footer {
+        margin-top: auto;
+        font-size: 10px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: .07em;
+        color: #888888;
+    }
+}
 </style>
 </head>
 
 <body>
+<div class="mobile-warning">
+    <div class="mobile-warning-title">
+        Портфолио лучше<br>
+        смотреть с компьютера.
+    </div>
 
+    <div class="mobile-warning-text">
+        Здесь важны масштаб, типографика<br>
+        и композиция.
+    </div>
+
+    <div class="mobile-warning-footer">
+        ЯРОСЛАВ РОМАНЦОВ · CONTENT / EDITORIAL
+    </div>
+</div>
 
 <!-- =========================
      ПЕРВЫЙ ЭКРАН
