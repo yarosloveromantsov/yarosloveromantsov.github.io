@@ -936,8 +936,8 @@ font-size: 44px;
 
 .wealth-results {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 60px;
     margin-top: 65px;
     padding-top: 24px;
     border-top: 1px solid #d9d9d9;
@@ -949,11 +949,10 @@ font-size: 44px;
 }
 
 .wealth-result-number {
-    font-size: clamp(38px, 4vw, 62px);
+    font-size: clamp(38px, 3.5vw, 56px);
     line-height: .9;
     letter-spacing: -.05em;
     font-weight: 700;
-    white-space: nowrap;
 }
 
 .wealth-result-label {
@@ -1994,19 +1993,22 @@ font-size: 44px;
         </div>
     </div>
 
-   <div class="wealth-result">
-    <div class="wealth-result-number">ПАРТНЁРСКИЕ МАТЕРИАЛЫ</div>
-    <div class="wealth-result-label">
-        адаптация под стиль канала
+    <div class="wealth-result">
+        <div class="wealth-result-number">ПАРТНЁРЫ</div>
+        <div class="wealth-result-label">
+            адаптация материалов
+        </div>
     </div>
+
+    <div class="wealth-result">
+        <div class="wealth-result-number">ЕДИНАЯ СЕТКА</div>
+        <div class="wealth-result-label">
+            планирование публикаций
+        </div>
+    </div>
+
 </div>
 
-<div class="wealth-result">
-    <div class="wealth-result-number">ЕДИНАЯ СЕТКА</div>
-    <div class="wealth-result-label">
-        планирование публикаций
-    </div>
-</div>
 </section>
     <!-- =========================
      07 / АВТОМАТИЗАЦИЯ
