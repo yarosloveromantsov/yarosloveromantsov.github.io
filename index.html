@@ -1203,10 +1203,9 @@ font-size: 44px;
 }
 
 .premium-principle {
-    margin-top: 65px;
-    padding: 24px 0 28px;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+    margin-top:65px;
+    padding:24px 0 28px;
+    border-top:1px solid #d9d9d9;
 }
 
 .premium-principle-label {
@@ -1353,13 +1352,26 @@ font-size: 44px;
     gap:6px;
 }
 
+.premium-contact-label {
+    margin-bottom:4px;
+    font-size:10px;
+    line-height:1;
+    font-weight:800;
+    letter-spacing:.08em;
+    color:#999;
+}
+
 .premium-contact-links a {
-    color:#888;
+    color:#111;
     text-decoration:none;
+    font-size:15px;
+    line-height:1.2;
+    font-weight:700;
+    letter-spacing:-.02em;
 }
 
 .premium-contact-links a:hover {
-    color:#111;
+    opacity:.55;
 }
 @media (max-width: 800px) {
 
@@ -1400,6 +1412,35 @@ font-size: 44px;
         gap: 15px;
     }
 
+}
+    @media (max-width: 700px) {
+
+    .video-screen {
+        padding: 40px 25px 60px;
+    }
+
+    .video-screen .section-top {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    .video-intro {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .video-title {
+        font-size: clamp(56px, 15vw, 100px);
+    }
+
+    .video-description {
+        max-width: 600px;
+    }
+
+    .video-description p {
+        font-size: 17px;
+    }
 }
 </style>
 </head>
@@ -2330,10 +2371,9 @@ font-size: 44px;
             </div>
         </div>
 
-        <div class="automation-result">
-            <div class="automation-result-number">
-                CONTROL
-            </div>
+<div class="automation-result-number">
+    КОНТРОЛЬ
+</div>
             <div class="automation-result-label">
                 контроль результата вместо ручной сборки
             </div>
@@ -2765,6 +2805,7 @@ font-size: 44px;
     </div>
 
     <div class="premium-contact-links">
+        <div class="premium-contact-label">КОНТАКТЫ</div>
         <a href="https://t.me/yaroboi" target="_blank" rel="noopener">@YAROBOI</a>
         <a href="mailto:yaroslove.rm@gmail.com">YAROSLOVE.RM@GMAIL.COM</a>
     </div>
