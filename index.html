@@ -564,6 +564,11 @@ font-size: 44px;
     border-top: 1px solid var(--line);
     padding-top: 28px;
 }
+    .promotion-main {
+    display: grid;
+    grid-template-columns: 1.35fr .65fr;
+    align-items: start;
+}
 
 .promotion-main-number {
     font-size: clamp(72px, 9vw, 130px);
@@ -585,8 +590,8 @@ font-size: 44px;
 }
 
 .promotion-main-price {
-    margin-top: 34px;
-
+    margin-top: 0;
+    padding-top: 4px;
     font-size: 32px;
     line-height: 1;
     font-weight: 700;
@@ -594,10 +599,12 @@ font-size: 44px;
 }
 
 .promotion-main-price span {
+    display: block;
+    margin-top: 12px;
     color: #999;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: .05em;
+    letter-spacing: .06em;
     text-transform: uppercase;
 }
 
@@ -1522,8 +1529,8 @@ font-size: 44px;
                 ₽17,34
                 <span>стоимость результата</span>
             </div>
-
         </div>
+     </div>
 
 
 </section>
